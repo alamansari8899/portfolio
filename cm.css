@@ -1,0 +1,214 @@
+.text_intact {
+  word-break: keep-all;
+}
+
+/*font weight*/
+.fontW1 {
+  font-weight: 100 !important;
+}
+.fontW2 {
+  font-weight: 200 !important;
+}
+.fontW3 {
+  font-weight: 300 !important;
+}
+.fontW4 {
+  font-weight: 400 !important;
+}
+.fontW5 {
+  font-weight: 500 !important;
+}
+.fontW6 {
+  font-weight: 600 !important;
+}
+.fontW7 {
+  font-weight: 700 !important;
+}
+.fontW8 {
+  font-weight: 800 !important;
+}
+.fontW9 {
+  font-weight: 900 !important;
+}
+/*borders*/
+
+.fsC_none_brdr {
+  border: none !important;
+  border-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+/* TEXT OPACITY */
+.fsTextOpacity7 {
+  opacity: 0.7;
+}
+/* FONT STYLE */
+.textUpercase {
+  text-transform: uppercase;
+}
+.textCapitalize {
+  text-transform: capitalize;
+}
+.textLowercase {
+  text-transform: lowercase;
+}
+/*text alignment*/
+.a-left {
+  text-align: left;
+}
+.a-right {
+  text-align: right;
+}
+.a-center {
+  text-align: center;
+}
+.a-justify {
+  text-align: justify;
+}
+/* LINE HEIGHT */
+.fs_lineHeightForHLOnDesktop01 {
+  line-height: 1;
+}
+.imgContainer {
+  padding-bottom: 80%;
+  background-size: contain;
+  background-position: 50%;
+  background-color: white;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+/*MODAL*/
+/* .modal-content {
+  margin-top: 25%;
+}
+.modal-dialog_fs {
+  max-width: 90% !important;
+}
+.modal-content_fs {
+  margin: 7% auto !important;
+  border: none !important;
+  border-radius: 0px !important;
+} */
+
+/* MODAL. Can be removed afterwards **/
+/* .miniModal_Body {
+  min-width: 250px;
+  width: auto;
+  max-width: 90% !important;
+} */
+/* Expand width as required */
+
+/* Actual contents should go in the below boxes. FOR the moment not used due to less time for testing **/
+.fs_contentBoxFull {
+  width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.fs_contentBoxFull1 {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+/* Firefox */ /* IE 10+ */
+.fs_contentBoxFull1::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+.fs_contentBox60_R {
+  width: 60%;
+  max-height: 80%;
+  overflow: hidden;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/* Make this box responsive. On mobile make it 90%*/
+
+.fs_contentBox60 {
+  width: 60%;
+  max-height: 80%;
+  overflow: hidden;
+}
+.fs_contentBox90 {
+  width: 90%;
+  max-height: 80%;
+  overflow: hidden;
+}
+/* max-width: 100%;*/
+
+.fs_contentBox601 {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.fs_contentBox601::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+/* IE 10+ */ /* Firefox */ /* WebKit */
+
+/* height limiting boxes **/
+.fs_contentBox100H {
+  width: 100%;
+  height: 100px;
+  max-height: 100px;
+}
+/*overflow: hidden;*/
+
+/* Image in overlay  ***/
+.abImageHeader {
+  position: absolute;
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+/*background-position: top;*/
+
+.simpleOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+}
+
+/* Must be wrapped inside bootstrap's container. Also make BS's container relative **/
+.fs_container {
+  position: relative;
+  left: 0px;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  /* position: relative;
+  height: auto;
+  width: auto;
+  max-width: 1140px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+/*relative position*/
+.fs_relative {
+  position: relative;
+}
+
+.fsT_m1000 {
+  min-height: 1000px;
+  position: relative;
+}
+.fsT_m750 {
+  min-height: 750px;
+  position: relative;
+}
+.fsT_m650 {
+  min-height: 650px;
+  position: relative;
+}
