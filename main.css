@@ -33,7 +33,9 @@ navbar-hide {
 .navbar-toggler {
   border: 0px solid transparent!important;
 }
-
+.fs_LightFont {
+    color: #fff !important;
+}
 /* MODAL. Can be removed afterwards **/
 .miniModal_Body {
   min-width: 800px;
