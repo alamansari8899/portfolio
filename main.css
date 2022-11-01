@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kristi&family=Montserrat:wght@800&family=Satisfy&family=Oswald:wght@200&family=Poppins:wght@200;400;700&family=Open+Sans:wght@200;400;500;700&family=Roboto:wght@200;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kristi&family=Lato:ital,wght@0,100;0,200;0,300;0,400;0,900;1,900&family=Montserrat:wght@800&family=Satisfy&family=Oswald:wght@200&family=Poppins:wght@200;400;700&family=Open+Sans:wght@200;400;500;700&family=Roboto:wght@200;400;500;700;900&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -7,7 +7,7 @@ body{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: black;
+  background-color: rgb(223 207 213);
 }
 /* starts .navbar-brand */
 /* .navbar-brand {
@@ -35,11 +35,11 @@ navbar-hide {
   border: 0px solid transparent!important;
 }
 .navBarS-1{
-  background: rgb(255, 193, 7);
-  border-radius: 0px 55px 55px 0px;
+  background: rgb(223 207 213);
+  /* border-radius: 0px 55px 55px 0px; */
   box-shadow: rgb(0 0 0 / 10%) 0px 0px 16px 4px;
   min-height: 70px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 /* MODAL. Can be removed afterwards **/
 .miniModal_Body {
@@ -57,6 +57,7 @@ navbar-hide {
 .close {
   font-size: 22px !important;
 }
+.Lato{font-family: 'Lato';}
 .Montserrat{font-family: 'Montserrat';}
 .Kristi{font-family: 'Kristi';}
 .Satisfy{font-family: 'Satisfy';}
@@ -64,6 +65,34 @@ navbar-hide {
 .Open-Sans{font-family: 'Open Sans';}
 .Poppins{font-family: 'Poppins';}
 .Roboto{font-family: 'Roboto';}
+/*font weight*/
+.fontW1 {
+  font-weight: 100 !important;
+}
+.fontW2 {
+  font-weight: 200 !important;
+}
+.fontW3 {
+  font-weight: 300 !important;
+}
+.fontW4 {
+  font-weight: 400 !important;
+}
+.fontW5 {
+  font-weight: 500 !important;
+}
+.fontW6 {
+  font-weight: 600 !important;
+}
+.fontW7 {
+  font-weight: 700 !important;
+}
+.fontW8 {
+  font-weight: 800 !important;
+}
+.fontW9 {
+  font-weight: 900 !important;
+}
 .text_bgImg02 {
 background-size: cover;
 background-clip: text;
@@ -173,7 +202,7 @@ background-position: center;
 /* my styles */
 .fsLetterS-1{letter-spacing: .6;}
 .fs_standardBtnFontSize{
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Roboto", "Open Sans", sans-serif;
   /* background: #ff000017; */
   /* border-radius: 0!important; */
@@ -223,7 +252,7 @@ background-position: center;
     transition: 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     border-radius: 0px !important;
     height: 40px;
-    border:2px solid #02ff84!important;
+    border:1px solid #dfcfd5!important;
     /* border-bottom: 1px solid black!important;
 }
 
@@ -283,23 +312,30 @@ label {
 .shadowNow{
   box-shadow: -1px 15px 29px -28px #656565;"
 }
-.fs_LightFont {
-  color: #fff !important;
+.fs_ThemeFont {
+  color: #dfcfd5 !important;
 }
-.borderGradient-1{    border-left: 47px solid;
-  border-image: linear-gradient(#000000, rgb(255, 193, 7), #020202) 1;
-  border-top: 50px solid;
-  border-right: 0px;
-  border-bottom: 0;
+.fs_LightFont {
+  color: #3e3434 !important;
+}
+.fs_DarkFont {
+  color: #262626 !important;
+}
+.borderGradient-1{   
+  border-image: linear-gradient(174deg, #000000, rgb(255, 193, 7), #020202) 1;
+  border-bottom: 1px solid;
+  border-top: 0;
+  border-right: 0;
   }
-  .borderGradient-2{    border-left: 37px solid;
+  .borderGradient-2{    
+    /* border-left: 37px solid; */
     border-image: linear-gradient(#000000, rgb(255, 193, 7), #020202) 1;
     border-top: 0px solid;
     border-right: 0px;
     border-bottom: 0;
     }
     .borderGradient-3{   
-      border-bottom: 47px solid;
+      border-bottom: 1px solid;
       border-image: linear-gradient(90deg, #000000, rgb(255, 193, 7), #020202) 1;
       border-top: 0;
       border-right: 0px;
@@ -373,7 +409,7 @@ label {
 }
 .fsGradient-1{background: radial-gradient( circle at 100%, #fec42d 0% 15%, #fbff38a1 15% 30%, #aecbffa3 30% 45%,#595dbcd1 45% 60%, #521787 60% 75%, #3C1D56 75% 90%,#2F1546 90% 100%) fixed,radial-gradient( circle at 100%, #fec42d 0% 15%, #fbff38a1 15% 30%, #aecbffa3 30% 45%,#595dbcd1 45% 60%, #521787 60% 75%, #3C1D56 75% 90%,#2F1546 90% 100%) fixed;}
 .hdOver{
-  background: #ffc107b5;
+  background: linear-gradient(45deg, #ead4d4, #ead4d4d9,#ead4d4);
   }
 .textOpacity-1{opacity: .6;}.textOpacity-2{opacity: .4;}.textOpacity-3{opacity: .8;}
 .fsRSubHlStyl-1{word-spacing: 3px;}
@@ -382,8 +418,27 @@ label {
   background-color: #ffc107;
 }
 @media (min-width: 320px) {
+  .fsSvg-1m{
+    top: -309px;
+    left: -142px;
+    width: 471px;
+    height: 724px;
+    overflow: visible;
+    fill: #c1b54b9c;
+    transform: rotate(-103deg);
+  }
+  .fsSvg-12m{
+    transform: rotate(77deg);
+    top: -30px;
+    left: -4px;
+    width: 338px;
+    height: 766px;
+    overflow: visible;
+    fill: #c1b54b9c
+
+  }
   .svgWidth{
-    width: 44px;
+    width: 20px;
     fill: #016635;
   }
   .fsIndicator-1{width: 10px!important;height: 10px!important;border-radius: 50%;border: 0px}
@@ -393,7 +448,8 @@ label {
     letter-spacing: 0px;
     
   }
-  .fsCap-1{bottom: 27%!important;width: 85%;}
+  .fsCap-1{    bottom: 37%!important;
+    width: 85%;}
   .fs_coverImg008{
     min-height: 620px!important;
   }
@@ -403,8 +459,28 @@ label {
     top: 295px;
     left: -11px;
     overflow: visible;
-    fill: #000000;
+    fill: #c1b54b9c;
     transform: rotate(-90deg);
+  }
+  .fsSvg-11{
+    transform: rotate(90deg);
+    top: 24px;
+    width: 642px;
+    height: 802px;
+    left: -194px;
+    fill: #cdbe7e;
+    overflow: visible;
+    fill: #c1b54b9c;
+    
+  }
+  .fsSvg-12{
+    top: 1171px;
+    left: -276px;
+    width: 995px;
+    height: 1092px;
+    overflow: visible;
+    fill: #c1b54b9c;
+    transform: rotate(-103deg);
   }
   .fsSvg-2{
     width: 1043px;
@@ -583,8 +659,27 @@ label {
 }
 /* ENDS */
 @media (min-width: 576px) {
+  .fsSvg-1m{
+    top: -325px;
+    left: -76px;
+    width: 471px;
+    height: 724px;
+    overflow: visible;
+    fill: #c1b54b9c;
+    transform: rotate(-103deg);
+  }
+  .fsSvg-12m{
+    transform: rotate(77deg);
+    top: -30px;
+    left: -4px;
+    width: 338px;
+    height: 766px;
+    overflow: visible;
+    fill: #c1b54b9c
+
+  }
   .svgWidth{
-    width: 60px;
+    width: 26px;
     fill: #016635;
   }
   .fsIndicator-1{width: 10px!important;height: 10px!important;border-radius: 50%;border: 0px solid;}
@@ -596,9 +691,28 @@ label {
     top: -67px;
     left: 114px;
     overflow: visible;
-    fill: #000000;
+    fill: #c1b54b9c;
     transform: rotate(-90deg);
   }
+  .fsSvg-11 {
+    transform: rotate(90deg);
+    top: 177px;
+    width: 642px;
+    height: 802px;
+    left: 56px;
+    fill: #cdbe7e;
+    overflow: visible;
+    fill: #c1b54b9c;
+}
+  .fsSvg-12 {
+    top: 1396px;
+    left: -213px;
+    width: 1203px;
+    height: 889px;
+    overflow: visible;
+    fill: #c1b54b9c;
+    transform: rotate(-103deg);
+}
   .fsSvg-2{
     width: 1216px;
     height: 1586px;
@@ -776,8 +890,27 @@ label {
 }
 /* ENDS */
 @media (min-width: 768px) {
+  .fsSvg-1m{
+    top: -325px;
+    left: -76px;
+    width: 471px;
+    height: 724px;
+    overflow: visible;
+    fill: #c1b54b9c;
+    transform: rotate(-103deg);
+  }
+  .fsSvg-12m{
+    transform: rotate(77deg);
+    top: -30px;
+    left: -4px;
+    width: 338px;
+    height: 766px;
+    overflow: visible;
+    fill: #c1b54b9c
+
+  }
   .svgWidth{
-    width: 90px;
+    width: 34px;
     fill: #016635;
   }
   .baffinFont{
@@ -798,9 +931,18 @@ label {
     top: -17px;
     left: 114px;
     overflow: visible;
-    fill: #000000;
+    fill: #c1b54b9c;
     transform: rotate(-90deg);
   }
+  .fsSvg-12 {
+    top: 1323px;
+    left: -213px;
+    width: 1203px;
+    height: 889px;
+    overflow: visible;
+    fill: #c1b54b9c;
+    transform: rotate(-103deg);
+}
   .fsSvg-2{
     width: 1216px;
     height: 1586px;
@@ -976,7 +1118,7 @@ label {
 /* ENDS */
 @media (min-width: 992px) {
   .svgWidth{
-    width: 136px;
+    width: 40px;
     fill: #016635;
   }
   .fsIndicator-1{width: 10px!important;height: 10px!important;border-radius: 50%;border: 0px solid;}
@@ -991,9 +1133,28 @@ label {
     top: -150px;
     left: 5px;
     overflow: visible;
-    fill: #000000;
+    fill: #c1b54b9c;
     transform: rotate(-90deg);
   }
+  .fsSvg-11 {
+    transform: rotate(90deg);
+    top: -234px;
+    width: 1259px;
+    height: 1418px;
+    left: 74px;
+    fill: #cdbe7e;
+    overflow: visible;
+    fill: #c1b54b9c;
+}
+.fsSvg-12 {
+  top: 945px;
+  left: -213px;
+  width: 1397px;
+  height: 1333px;
+  overflow: visible;
+  fill: #c1b54b9c;
+  transform: rotate(-103deg);
+}
   .fsSvg-2{
     width: 1493px;
     height: 1586px;
@@ -1150,8 +1311,51 @@ label {
     top: -369px;
     left: -32px;
     overflow: visible;
-    fill: #000000;
+    fill: #c1b54b9c;
     transform: rotate(-103deg);
+  }
+  .fsSvg-11{
+    transform: rotate(90deg);
+    top: -650px;
+    width: 2417px;
+    height: 2212px;
+    left: -220px;
+    fill: #cdbe7e;
+   
+    
+    overflow: visible;
+    fill: #c1b54b9c;
+    
+  }
+  .fsSvg-12{
+    top: 525px;
+    left: -213px;
+    width: 1709px;
+    height: 1819px;
+  
+   
+    overflow: visible;
+    fill: #c1b54b9c;
+    transform: rotate(-103deg);
+  }
+  .fsSvg-1m{
+    top: -393px;
+    left: -142px;
+    width: 1010px;
+    height: 1022px;
+    overflow: visible;
+    fill: #c1b54b9c;
+    transform: rotate(-103deg);
+  }
+  .fsSvg-12m{
+    transform: rotate(77deg);
+    top: 0px;
+    left: -4px;
+    width: 995px;
+    height: 1062px;
+    overflow: visible;
+    fill: #c1b54b9c;
+
   }
   .fsSvg-2{
     width: 1884px;
@@ -1389,8 +1593,8 @@ label {
     font-family: "Poppins", "Roboto", "Open Sans", sans-serif;
   }
   .fs_resp_nav {
-    font-size: 18px;
-    font-family:  "Roboto", "Open Sans", sans-serif;
+    font-size: 16px;
+    
   }
 } /* small devices */
 @media (min-width: 576px) {
@@ -1399,8 +1603,8 @@ label {
     font-family: "Poppins", "Roboto", "Open Sans", sans-serif;
   }
   .fs_resp_nav {
-    font-size:20px;
-    font-family:  "Roboto", "Open Sans", sans-serif;
+    font-size:16px;
+  
   }
 } /* Less when content in headers are less. ELSE keep more if content in header is more */
 @media (min-width: 768px) {
@@ -1409,15 +1613,15 @@ label {
     font-family: "Poppins", "Roboto", "Open Sans", sans-serif;
   }
   .fs_resp_nav {
-    font-size: 22px;
-    font-family:  "Roboto", "Open Sans", sans-serif;
+    font-size: 16px;
+   
   }
 } /* ipad */
 /*  responsive sub headlines  */
 
 @media (min-width: 320px) {
   .fs_resp_SL {
-    font-size: 31px;
+    font-size: 24px;
    
   }
   .fs_productHL{
@@ -1437,7 +1641,7 @@ label {
 } /* Less when content in headers are less. ELSE keep more if content in header is more */
 @media (min-width: 768px) {
   .fs_resp_SL {
-    font-size: 42px;
+    font-size: 32px;
   }
   .fs_productHL{
     font-size: 36px;
