@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kristi&family=Lato:ital,wght@0,100;0,200;0,300;0,400;0,900;1,900&family=Montserrat:wght@800&family=Satisfy&family=Oswald:wght@200&family=Poppins:wght@200;400;700&family=Open+Sans:wght@200;400;500;700&family=Roboto:wght@200;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kristi&family=Ubuntu:wght@300;400;700&family=Alegreya&family=Great+Vibes&family=Lato:ital,wght@0,100;0,200;0,300;0,400;0,900;1,900&family=Montserrat:wght@800&family=Satisfy&family=Oswald:wght@200&family=Poppins:wght@200;400;700&family=Open+Sans:wght@200;400;500;700&family=Roboto:wght@200;400;500;700;900&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -13,6 +13,79 @@ body{
 /* .navbar-brand {
   width: 100px;
 } */
+/* NAVBAR */
+.navbar-collapse ul {
+  height: 67vh;
+  /* width: 120vw; */
+}
+
+.navbar-toggler {
+  background: none;
+  border: none;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  outline: 0;
+}
+
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  margin: 4px 0 4px 0;
+  transition: all 0.2s;
+}
+
+.navbar-dark .navbar-toggler .icon-bar {
+  background: #000;
+}
+
+.navbar-toggler .icon-bar:nth-of-type(1) {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .icon-bar:nth-of-type(2) {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .icon-bar:nth-of-type(3) {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-of-type(1) {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-of-type(2) {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .icon-bar:nth-of-type(3) {
+  transform: rotate(0);
+}
+.navbar-toggler {
+  background: #FFF;
+  BORDER-RADIUS: 0;
+  PADDING: 13PX 22PX;
+}
+
+
+
+/* FS utility of space */
+.fsCmarTop-1{margin-top: 49px;}
+
+.fs99{z-index: 999;}
+.fsCpTop-1{padding-top: 92px;}
+/* This only changes this particular animation duration */
+.animate__animated.animate__heartBeat {
+  --animate-duration: 100s;
+}
 .navbar-brand img {
   /* height: 50px; */
   /* put value of image height as your need */
@@ -28,12 +101,7 @@ navbar-hide {
   opacity: 0;
  
 }
-.navbar-light .navbar-toggler {
-  border-color:none!important;
-}
-.navbar-toggler {
-  border: 0px solid transparent!important;
-}
+
 .navBarS-1{
   background: rgb(223 207 213);
   /* border-radius: 0px 55px 55px 0px; */
@@ -57,6 +125,9 @@ navbar-hide {
 .close {
   font-size: 22px !important;
 }
+.Ubuntu{font-family: 'Ubuntu', sans-serif;}
+.Alegreya{font-family: 'Alegreya', serif;}
+.Great-Vibes{font-family: 'Great Vibes', cursive;}
 .Lato{font-family: 'Lato';}
 .Montserrat{font-family: 'Montserrat';}
 .Kristi{font-family: 'Kristi';}
@@ -65,6 +136,116 @@ navbar-hide {
 .Open-Sans{font-family: 'Open Sans';}
 .Poppins{font-family: 'Poppins';}
 .Roboto{font-family: 'Roboto';}
+/* COLORS */
+.secBck-1{background-color: #ed963f;}
+.secBck-2{background-color: #d2a946;}
+.nd2Color{background: yellowgreen;}
+.fsbg-1{
+  background: #b67d8f;
+}
+.fsbg-2{
+  background: #585b51;
+}
+.fsContCard-1{border-radius: 22px!important;
+  background: #ecd3c5;
+  box-shadow: 5px 5px 10px #cdb8ab, -5px -5px 10px #ffeedf;}
+  .fsContBtn-1{
+    background: #ecd3c5;
+    box-shadow:  -5px -5px 10px #e0c8bb,
+             5px 5px 10px #f8decf;
+    background: #ecd3c5;
+    box-shadow:  5px 5px 10px #cdb8ab,
+             -5px -5px 10px #ffeedf;
+  }
+  .fspCard-1{
+    border-radius: 42px!important;
+    border: 8px solid #8580720a!important;
+    background: #f20057;
+  }
+  .fspCard-2{
+    border-radius: 42px!important;
+    border: 8px solid #8580720a!important;
+    background: #f2b500;
+  }
+  .fspCard-3{
+    border-radius: 42px!important;
+    border: 8px solid #8580720a!important;
+    background: #63f200;
+  }
+  .fspCard-4{
+    border-radius: 42px!important;
+    border: 8px solid #8580720a!important;
+    background: #12e8e3;
+  }
+  .fspCard-5{
+    border-radius: 42px!important;
+    border: 8px solid #8580720a!important;
+    background: #f26900;
+  }
+  .fspCard-6{
+    border-radius: 42px!important;
+    border: 8px solid #8580720a!important;
+    background: #0069f2;
+  }
+  .fsbuttonS01{
+    background: #f20057;
+    box-shadow: 5px 5px 10px #df0050, -5px -5px 10px #ff005e;
+  }
+  .fsbuttonS02{
+    background: #f2b500;
+box-shadow:  5px 5px 10px #dfa700,
+             -5px -5px 10px #ffc300;
+  }
+  .fsbuttonS03{
+    background: #63f200;
+    box-shadow:  5px 5px 10px #5bdf00,
+                 -5px -5px 10px #6bff00;
+  }
+  .fsbuttonS04{
+    background: #12e8e3;
+    box-shadow:  5px 5px 10px #11d5d1,
+                 -5px -5px 10px #13fbf5;
+  }
+  .fsbuttonS05{
+    background: #f26900;
+    box-shadow:  5px 5px 10px #df6100,
+                 -5px -5px 10px #ff7100;
+  }
+  .fsbuttonS06{
+    background: #0069f2;
+    box-shadow:  5px 5px 10px #0061df,
+                 -5px -5px 10px #0071ff;
+  }
+  .fsbutton-1 {
+    border: 1px solid #fff!important;
+    border-radius: 11px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    
+   }
+.fsimgCard-1{
+  border-radius: 42px;
+    background: #ecd3c5;
+    box-shadow: 5px 5px 10px #cdb8ab, -5px -5px 10px #ffeedf;
+    border: 8px solid #ebd4cc;
+}
+.fsLetterS-1{
+  letter-spacing: 2px;
+}
+.spn::after{
+  content: '';
+    width: 100%;
+    height: 20px;
+    background: #ffdc00;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    /* z-index: -1; */
+    border-radius: 2px;
+    transform: rotate(-1deg);
+    transition: all .2s;
+}
 /*font weight*/
 .fontW1 {
   font-weight: 100 !important;
@@ -122,11 +303,11 @@ background-position: center;
 
 .fs_Horizontalscroll::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .fs_Horizontalscroll::-webkit-scrollbar-thumb {
-  border-radius: 10px;
+  /* border-radius: 10px; */
   /* -webkit-box-shadow:inset 0 0 14px rgb(43 46 6); */
   background: #413d3d;
 }
@@ -252,7 +433,7 @@ background-position: center;
     transition: 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     border-radius: 0px !important;
     height: 40px;
-    border:1px solid #dfcfd5!important;
+    border:1px solid #0a0a0a!important;
     /* border-bottom: 1px solid black!important;
 }
 
@@ -316,7 +497,7 @@ label {
   color: #dfcfd5 !important;
 }
 .fs_LightFont {
-  color: #3e3434 !important;
+  color: #ffffff !important;
 }
 .fs_DarkFont {
   color: #262626 !important;
@@ -409,8 +590,17 @@ label {
 }
 .fsGradient-1{background: radial-gradient( circle at 100%, #fec42d 0% 15%, #fbff38a1 15% 30%, #aecbffa3 30% 45%,#595dbcd1 45% 60%, #521787 60% 75%, #3C1D56 75% 90%,#2F1546 90% 100%) fixed,radial-gradient( circle at 100%, #fec42d 0% 15%, #fbff38a1 15% 30%, #aecbffa3 30% 45%,#595dbcd1 45% 60%, #521787 60% 75%, #3C1D56 75% 90%,#2F1546 90% 100%) fixed;}
 .hdOver{
-  background: linear-gradient(45deg, #ead4d4, #ead4d4d9,#ead4d4);
+  background: linear-gradient(45deg, #ead4d4, #ecd3c5,#ead4d4);
   }
+  .cBg-1{background: linear-gradient(45deg, #51472e, #272524,#4a4444);}
+  .cShdw{box-shadow: 0 0 8px #262626;}
+ 
+   
+   
+/* ENDS BUTTON */
+
+
+  .fsShdw-1{box-shadow: 0 0 8px;}
 .textOpacity-1{opacity: .6;}.textOpacity-2{opacity: .4;}.textOpacity-3{opacity: .8;}
 .fsRSubHlStyl-1{word-spacing: 3px;}
 /* my media */
@@ -418,6 +608,20 @@ label {
   background-color: #ffc107;
 }
 @media (min-width: 320px) {
+  .fsNagativetm{margin-top: -44px;}
+  .hloSvg{
+    width: 25px;
+    left: 67px;
+    top: -34px;
+    display: block;
+    fill: #000000;
+  }
+  .smImgC{    top: -62px;
+    width: 152px;
+    left: 126px;
+    min-height: 114px!important;}
+  .fsrespmtop{margin-top: 73px!important;}
+  .fsCmarTop-2{margin-top: -60px;}
   .fsSvg-1m{
     top: -309px;
     left: -142px;
@@ -439,15 +643,10 @@ label {
   }
   .svgWidth{
     width: 20px;
-    fill: #016635;
+    fill: #000000;
   }
   .fsIndicator-1{width: 10px!important;height: 10px!important;border-radius: 50%;border: 0px}
-  .baffinFont{
-    font-size:52px;
-    /* text-transform: lowercase; */
-    letter-spacing: 0px;
-    
-  }
+  
   .fsCap-1{    bottom: 37%!important;
     width: 85%;}
   .fs_coverImg008{
@@ -456,10 +655,10 @@ label {
   .fsSvg-1{
     width: 436px;
     height: 467px;
-    top: 295px;
-    left: -11px;
+    top: 450px;
+    left: -59px;
     overflow: visible;
-    fill: #c1b54b9c;
+    fill: #d2a946;
     transform: rotate(-90deg);
   }
   .fsSvg-11{
@@ -659,6 +858,18 @@ label {
 }
 /* ENDS */
 @media (min-width: 576px) {
+  .hloSvg{
+    width: 36px;
+    left: 82px;
+    top: -43px;
+    display: block;
+    fill: #000000;
+  }
+  .smImgC{        
+        top: -62px;
+        width: 171px;
+        left: 219px;
+        min-height: 131px!important;}
   .fsSvg-1m{
     top: -325px;
     left: -76px;
@@ -680,7 +891,7 @@ label {
   }
   .svgWidth{
     width: 26px;
-    fill: #016635;
+    fill: #000000;
   }
   .fsIndicator-1{width: 10px!important;height: 10px!important;border-radius: 50%;border: 0px solid;}
   .fsCap-1{ width: auto;bottom: 42%!important;left: 22%!important;}
@@ -688,10 +899,10 @@ label {
   .fsSvg-1{
     width: 543px;
     height: 1002px;
-    top: -67px;
-    left: 114px;
+    top: -26px;
+    left: 16px;
     overflow: visible;
-    fill: #c1b54b9c;
+    fill: #d2a946;
     transform: rotate(-90deg);
   }
   .fsSvg-11 {
@@ -761,13 +972,8 @@ label {
   .indicatorImgLocal{width:50px!important;height: 50px!important;}
   
   
-  .baffinFont{
-    font-size: 52px;
-    
-    /* text-transform: lowercase; */
-    letter-spacing: 0px;
-    
-  }
+
+  
   .card-columns {
     -webkit-column-count: 2!important;
     -moz-column-count: 2!important;
@@ -889,6 +1095,21 @@ label {
 }
 /* ENDS */
 @media (min-width: 768px) {
+  .fsNagativetm{margin-top: -97px;}
+  .hloSvg{
+    width: 44px;
+    left: 104px;
+    top: -55px;
+    display: block;
+    fill: #000000;
+  }
+  .smImgC{        
+    top: -99px;
+    width: 171px;
+    left: 219px;
+    min-height: 131px!important;}
+  .fsrespmtop{margin-top: 115px!important;}
+  .fsCmarTop-2{margin-top: -89px;}
   .fsSvg-1m{
     top: -325px;
     left: -76px;
@@ -910,14 +1131,9 @@ label {
   }
   .svgWidth{
     width: 34px;
-    fill: #016635;
+    fill: #000000;
   }
-  .baffinFont{
-    font-size: 68px;
-    /* text-transform: lowercase; */
-    letter-spacing: 0px;
-    
-  }
+
   .fsIndicator-1{width: 10px!important;height: 10px!important;border-radius: 50%;border: 0px solid;}
   .fsCap-1 {
     bottom: 35%!important;
@@ -927,10 +1143,10 @@ label {
   .fsSvg-1{
     width: 743px;
     height: 1002px;
-    top: -17px;
-    left: 114px;
+    top: 173px;
+    left: -21px;
     overflow: visible;
-    fill: #c1b54b9c;
+    fill: #d2a946;
     transform: rotate(-90deg);
   }
   .fsSvg-12 {
@@ -1116,9 +1332,14 @@ label {
 }
 /* ENDS */
 @media (min-width: 992px) {
+  .smImgC{        
+    top: -130px;
+    width: 243px;
+    left: 244px;
+    min-height: 204px!important;}
   .svgWidth{
-    width: 40px;
-    fill: #016635;
+    width: 25px;
+    fill: #000000;
   }
   .fsIndicator-1{width: 10px!important;height: 10px!important;border-radius: 50%;border: 0px solid;}
   .fsCap-1 {
@@ -1129,10 +1350,10 @@ label {
   .fsSvg-1{
     width: 1122px;
     height: 1238px;
-    top: -150px;
-    left: 5px;
+    top: -33px;
+    left: -129px;
     overflow: visible;
-    fill: #c1b54b9c;
+    fill: #d2a946;
     transform: rotate(-90deg);
   }
   .fsSvg-11 {
@@ -1247,12 +1468,7 @@ label {
     margin-top:0px;
    }
    .coverImg{min-height: 520px!important;}
-   .baffinFont{
-    font-size: 100px;
-    /* text-transform: lowercase; */
-    letter-spacing: 0px;
-    
-  }
+   
   .randomCardBdy {
     margin-right: -70px;
     z-index: 1;
@@ -1270,7 +1486,7 @@ label {
     min-height: 385px!important;
   }
   .headerImg04{
-    min-height: 222px!important;
+    min-height:321px!important;
   }
   
   .fs_roundedImg{
@@ -1288,7 +1504,11 @@ label {
 }
 /* ENDS */
 @media (min-width: 1200px) {
- 
+  .smImgC{        
+    top: -127px;
+    width: 243px;
+    left: 337px;
+    min-height: 204px!important;}
   .modal-dialog_fs {
     min-width: 60%;
     max-width: 60% !important;
@@ -1307,10 +1527,10 @@ label {
   .fsSvg-1{
     width: 1586px;
     height: 1660px;
-    top: -369px;
-    left: -32px;
+    top: -343px;
+    left: -127px;
     overflow: visible;
-    fill: #c1b54b9c;
+    fill: #d2a946;
     transform: rotate(-103deg);
   }
   .fsSvg-11{
@@ -1481,14 +1701,49 @@ label {
 
 /* START BOSS */
 @media (min-width: 350px) {
-  .newS01{
-   
-    /* position: absolute; */
-   
-    border-top: 5px solid #fff!important;
-    border-left: 5px solid #fff!important;
-    border-right: 0px!important;
-    border-bottom: 0px!important;
+  .fsRndm-1{
+    width: 139px;
+    height: 20px;
+    background: #ffdd67;
+    position: absolute;
+    left: -10px;
+    top: 57px;
+    border-radius: 22px;
+    transform: rotate(-1deg);
+    transition: all .2s;
+  }
+  .fsRndm-2{
+    width: 113px;
+    height: 20px;
+    background: #ffdd67;
+    position: absolute;
+    left: -10px;
+    top: 57px;
+    border-radius: 22px;
+    transform: rotate(-1deg);
+    transition: all .2s;
+  }
+  .fsRndm-3{
+    width: 208px;
+    height: 20px;
+    background: #ffdd67;
+    position: absolute;
+    left: -10px;
+    top: 55px;
+    border-radius: 22px;
+    transform: rotate(-1deg);
+    transition: all .2s;
+  }
+  .fsRndm-4{
+    width: 171px;
+    height: 20px;
+    background: #ffdd67;
+    position: absolute;
+    left: -10px;
+    top: 56px;
+    border-radius: 22px;
+    transform: rotate(-1deg);
+    transition: all .2s;
   }
   .fs_headerSection_Height {
     min-height: calc(15em + 45vw);
@@ -1501,6 +1756,50 @@ label {
   }
 } /* Less when content in headers are less. ELSE keep more if content in header is more */
 @media (min-width: 768px) {
+  .fsRndm-1{
+    width: 168px;
+    height: 20px;
+    background: #ffdd67;
+    position: absolute;
+    left: -10px;
+    top: 76px;
+    border-radius: 22px;
+    transform: rotate(-1deg);
+    transition: all .2s;
+  }
+  .fsRndm-2{
+    width: 136px;
+    height: 20px;
+    background: #ffdd67;
+    position: absolute;
+    left: -10px;
+    top: 74px;
+    border-radius: 22px;
+    transform: rotate(-1deg);
+    transition: all .2s;
+  }
+  .fsRndm-3{
+    width: 268px;
+    height: 20px;
+    background: #ffdd67;
+    position: absolute;
+    left: -10px;
+    top: 74px;
+    border-radius: 22px;
+    transform: rotate(-1deg);
+    transition: all .2s;
+  }
+  .fsRndm-4{
+    width: 217px;
+    height: 20px;
+    background: #ffdd67;
+    position: absolute;
+    left: -10px;
+    top: 73px;
+    border-radius: 22px;
+    transform: rotate(-1deg);
+    transition: all .2s;
+  }
   .fs_headerSection_Height {
     min-height: calc(10em + 37vw);
   }
@@ -1617,34 +1916,51 @@ label {
   }
 } /* ipad */
 /*  responsive sub headlines  */
-
 @media (min-width: 320px) {
+  .baffinFont{
+    font-size:42px;
+  }
   .fs_resp_SL {
-    font-size: 24px;
+    font-size: 16px;
    
+  }
+  .fs_resp_bdy{
+    font-size: 18px;
+  }
+  .fs_resp_Cnt{
+    font-size: 16px;
   }
   .fs_productHL{
     font-size:22px;
-    font-family:  "Roboto", "Open Sans", sans-serif;
+   
   }
 } /* small devices */
 @media (min-width: 576px) {
   .fs_resp_SL {
-    font-size: 40px;
+    font-size: 17px;
   
   }
   .fs_productHL{
     font-size: 28px;
-    font-family: "Roboto", "Open Sans", sans-serif;
+   
   }
 } /* Less when content in headers are less. ELSE keep more if content in header is more */
 @media (min-width: 768px) {
   .fs_resp_SL {
-    font-size: 32px;
+    font-size: 18px;
+  }
+  .fs_resp_bdy{
+    font-size: 21px;
   }
   .fs_productHL{
     font-size: 36px;
-    font-family:  "Roboto", "Open Sans", sans-serif;
+    
+  }
+  .fs_resp_Cnt{
+    font-size: 15px;
+  }
+  .baffinFont{
+    font-size: 58px;
   }
 } /* ipad */
 
@@ -1766,4 +2082,5 @@ label {
     font-family: "Roboto", "Open Sans", sans-serif;
   }
 } /* ipad */
+
 
