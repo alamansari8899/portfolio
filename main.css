@@ -74,7 +74,56 @@ body{
   BORDER-RADIUS: 0;
   PADDING: 13PX 22PX;
 }
+.cta {
+  border: none;
+  background: none;
+}
 
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
 
 /* FS utility of space */
@@ -123,7 +172,7 @@ navbar-hide {
 
 /*modal close btn*/
 .close {
-  font-size: 22px !important;
+  font-size: 72px !important;
 }
 .Ubuntu{font-family: 'Ubuntu', sans-serif;}
 .Alegreya{font-family: 'Alegreya', serif;}
@@ -147,8 +196,8 @@ navbar-hide {
   background: #585b51;
 }
 .fsContCard-1{border-radius: 22px!important;
-  background: #ecd3c5;
-  box-shadow: 5px 5px 10px #cdb8ab, -5px -5px 10px #ffeedf;}
+  background: #ecd4cb;
+  box-shadow: inset -5px -5px 10px #dbc5bd, inset 5px 5px 10px #fde3d9;}
   .fsContBtn-1{
     background: #ecd3c5;
     box-shadow:  -5px -5px 10px #e0c8bb,
@@ -161,31 +210,41 @@ navbar-hide {
     border-radius: 42px!important;
     border: 8px solid #8580720a!important;
     background: #f20057;
+    box-shadow: inset -5px -5px 10px #e10051, inset 5px 5px 10px #ff005d;
   }
   .fspCard-2{
     border-radius: 42px!important;
     border: 8px solid #8580720a!important;
     background: #f2b500;
+    box-shadow: inset -5px -5px 10px #e1a800, inset 5px 5px 10px #ffc200;
   }
   .fspCard-3{
     border-radius: 42px!important;
     border: 8px solid #8580720a!important;
     background: #63f200;
+box-shadow: inset -5px -5px 10px #5ce100,
+            inset 5px 5px 10px #6aff00;
   }
   .fspCard-4{
     border-radius: 42px!important;
     border: 8px solid #8580720a!important;
     background: #12e8e3;
+box-shadow: inset -5px -5px 10px #11d8d3,
+            inset 5px 5px 10px #13f8f3;
   }
   .fspCard-5{
     border-radius: 42px!important;
     border: 8px solid #8580720a!important;
     background: #f26900;
+    box-shadow: inset -5px -5px 10px #e16200,
+                inset 5px 5px 10px #ff7000;
   }
   .fspCard-6{
     border-radius: 42px!important;
     border: 8px solid #8580720a!important;
     background: #0069f2;
+box-shadow: inset -5px -5px 10px #0062e1,
+            inset 5px 5px 10px #0070ff;
   }
   .fsbuttonS01{
     background: #f20057;
@@ -226,8 +285,8 @@ box-shadow:  5px 5px 10px #dfa700,
    }
 .fsimgCard-1{
   border-radius: 42px;
-    background: #ecd3c5;
-    box-shadow: 5px 5px 10px #cdb8ab, -5px -5px 10px #ffeedf;
+  background: #ecd4cb;
+  box-shadow: inset -5px -5px 10px #dbc5bd, inset 5px 5px 10px #fde3d9;
     border: 8px solid #ebd4cc;
 }
 .fsLetterS-1{
@@ -1924,6 +1983,10 @@ label {
     font-size: 16px;
    
   }
+  .fsMainTxt{
+    font-size: 22px;
+    line-height: 2;
+  }
   .fs_resp_bdy{
     font-size: 18px;
   }
@@ -1948,6 +2011,10 @@ label {
 @media (min-width: 768px) {
   .fs_resp_SL {
     font-size: 18px;
+  }
+  .fsMainTxt{
+    font-size: 28px;
+    line-height: 2;
   }
   .fs_resp_bdy{
     font-size: 21px;
