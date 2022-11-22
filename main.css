@@ -127,6 +127,7 @@ body{
 
 
 /* FS utility of space */
+.fsTxtUp{text-transform: uppercase;}
 .fsCmarTop-1{margin-top: 49px;}
 
 .fs99{z-index: 999;}
