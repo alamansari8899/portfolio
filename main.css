@@ -127,6 +127,15 @@ body{
 
 
 /* FS utility of space */
+.fTxt{
+  font-size: 32px;
+    background: #ecd3c9;
+    position: relative;
+    margin-top: -70px;
+    margin-bottom: 44px;
+    padding: 0 9px;
+    text-shadow: 3px 3px #ffc107;
+}
 .fsTxtUp{text-transform: uppercase;}
 .fsCmarTop-1{margin-top: 49px;}
 
